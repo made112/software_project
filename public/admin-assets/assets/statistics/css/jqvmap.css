@@ -1,0 +1,32 @@
+ 
+.jqvmap-label{
+	position: absolute;
+	display: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #292929;
+	color: white;
+	font-family: sans-serif, Verdana;
+	font-size: smaller;
+	padding: 3px;
+} 
+.jqvmap-region{
+/*	stroke: #fff;
+	fill: #E6E9F4;*/
+	cursor: pointer;
+	transition: all .3s ease;
+}/*
+.jqvmap-region:hover{
+	fill: #89ABFF;
+}*/
+.jqvmap-ajax_response{
+	width: 100%;
+	height: 500px;
+}
+#vmap {
+	background-color: #fff !important
+}
+
+
+/* ; */

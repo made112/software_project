@@ -1,0 +1,121 @@
+.profile-widget {
+    background-color: #fff;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    /* overflow: hidden; */
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.profile-img {
+    cursor: pointer;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    width: 80px;
+}
+.dropdown.profile-action {
+    position: absolute;
+    RIGHT: 10px;
+    text-align: right;
+    top: 3px;
+}
+.user-name {
+    color: #333;
+}
+.text-ellipsis {
+    display: block;
+    max-width: 100%;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.m-t-10 {
+    margin-top: 10px !important;
+}
+.profile-widget .user-name > a {
+    color: #333;
+}
+.text-muted {
+    color: #8e8e8e !important;
+}
+.profile-img .avatar {
+    font-size: 24px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    width: 80px;
+}
+.avatar {
+    background-color: #aaa;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 38px;
+    position: relative;
+    white-space: nowrap;
+}
+.avatar > img {
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.action-icon {
+    color: #777;
+    font-size: 18px;
+    display: inline-block;
+}
+.dropdown-toggle {
+    white-space: nowrap;
+}
+.dropdown-menu {
+    font-size: 13px;
+}
+.dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    transform-origin: left top 0;
+    box-shadow: inherit;
+    background-color: #fff;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-size: 11px !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.m-r-5 {
+    margin-right: 5px !important;
+}
+.m-l-5 {
+    margin-left: 5px !important;
+}
+
+.dropdown-menu>li>a, .dropdown-menu>.dropdown-item {
+    padding-top: 0 !important;
+}

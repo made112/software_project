@@ -1,0 +1,36 @@
+@font-face {
+  font-family: hi5;
+  src:url(../fonts/Al-Jazeera-Arabic-Regular.otf);
+}
+
+
+@media print and (width: 14.8cm) and (height: 21cm) {
+    @page {
+    margin: 0cm;
+    }
+    }
+    /* style sheet for “letter” printing */
+    @media print and (width: 5.83in) and (height: 8.27in) {
+    @page {
+    margin: 0cm;
+    }
+    }
+    @media print {  
+      @page {
+        size: 10cm 35cm;
+        margin: 0cm;
+      }
+    }
+    /*@media print {*/
+    /*  html, body {*/
+    /*    width: 10cm;*/
+    /*    height: 15.02cm;*/
+    /*  }*/
+      /* ... the rest of the rules ... */
+    /*}*/
+    body{font-family: hi5, Helvetica, sans-serif;margin: 0;direction: rtl;}
+    .warpper-print{width: 90%px;margin-right: auto;margin-left: auto;text-align: right;}
+    #print-logo{margin: 10px 0;text-align: center;}
+    #print-title{margin-bottom: 10px;}
+    #print-photo{margin-bottom: 10px;}
+    #print-details *{font-family:  hi5, Helvetica, sans-serif; max-width: 100%;}

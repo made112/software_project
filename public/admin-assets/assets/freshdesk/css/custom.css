@@ -1,0 +1,1012 @@
+    @import "https://use.fontawesome.com/releases/v5.8.1/css/all.css";
+    body{
+        font-family: "Almarai";
+        background-color: #F5F6FA;
+    }
+    .btn-theme{
+        color: #fff;
+        background: #43425D;
+        background-color: #43425D;
+    }
+    .btn-theme:hover{
+        color: #fff;
+        background: #3D3D3D;
+        background-color: #3D3D3D;
+    }
+    .freshdesk-wrapper{
+        display: flex;
+        background-color: #F5F6FA;
+        height: calc(100vh - (70px + 37.5px + 1.5rem));
+        overflow: hidden;
+        /*max-width: 1570px;*/
+        margin: auto;
+        overflow: hidden;
+    }
+    .freshdesk-wrapper .freshdesk-contact{
+        max-width: 364px;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+    .freshdesk-wrapper .freshdesk-contact .head{
+        padding: 20px;
+        background-color: #fff;
+    }
+    .freshdesk-wrapper .freshdesk-contact .head .search-box{
+        position: relative;
+    }
+    .freshdesk-wrapper .freshdesk-contact .head .search-box .icon{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 48px;
+        height: 48px;
+        line-height: 35px;
+        text-align: center;
+    }
+    [dir="rtl"] .freshdesk-wrapper .freshdesk-contact .head .search-box .icon{
+        left: auto;
+        right: 0;
+    }
+    .freshdesk-wrapper .freshdesk-contact .head .search-box .form-control{
+        border-color: transparent;
+        height: 40px;
+        background: #F5F6FA;
+        border-radius: 8px;
+        padding-inline-start: 48px;
+    }
+    .freshdesk-wrapper .freshdesk-contact .head .search-box .form-control::placeholder{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #707070;
+    }
+    .freshdesk-wrapper .freshdesk-contact .head .search-box .form-control:focus{
+        box-shadow: none;
+        background: #F5F5F5;
+        border-color:#D9DCE0;
+    }
+    .freshdesk-wrapper .freshdesk-contact .body{
+        height: calc(100% - 80px);
+        position: relative;
+    }
+    .contact-card{
+        display: flex;
+        gap: 20px;
+        padding: 1rem;
+        background-color: #fff;
+        cursor: pointer;
+        border-bottom: 1px solid #D9DCE0;
+        transition: all .3s ease;
+    }
+    .contact-card:last-child{
+        border-bottom: 1px solid transparent;
+    }
+    .contact-card.active,
+    .contact-card:hover{
+        background: #F5F5F5;
+    }
+    .contact-card .pic{
+        min-width: 48px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .contact-card .pic img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    .contact-card .content{
+        width: 100%;
+    }
+    .contact-card .content .contact-name{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #011627;
+        margin-bottom: 4px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .contact-card .content .last-msg{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #707070;
+        height: 18px;
+        overflow: hidden;
+    }
+    .contact-card .date{
+        min-width: 32px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #707991;
+    }
+
+    .freshdesk-tickets{
+        width: 100%;
+    }
+    .freshdesk-tickets .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .freshdesk-tickets .head .title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+        color: #3D3D3D;
+    }
+    .freshdesk-tickets .head .option{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    .freshdesk-tickets .head .option .custom-select{
+        min-width: 220px;
+        width: 220px;
+        height: 40px;
+        border-radius: 8px;
+    }
+    .freshdesk-tickets .head .option .btn-option{
+        display: none;
+        gap: 1rem;
+    }
+    .freshdesk-tickets .head .option .btn-option .btn{
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+        padding: 0;
+        background: #FFFFFF;
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .freshdesk-tickets .body{
+        padding: 0 20px;
+        position: relative;
+        height: calc(100% - 80px);
+    }
+
+    .tickets-card{
+        display: flex;
+        width: 100% !important;
+        gap: 20px;
+        text-decoration: none !important;
+        background: #FFFFFF;
+        padding: 24px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        margin-bottom: 24px;
+    }
+    .tickets-card a{
+        text-decoration: none;
+    }
+    .tickets-card:last-child{
+        margin-bottom: 0;
+    }
+    .tickets-card .pic{
+        width: 70px;
+        min-width: 70px;
+        height: 70px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .tickets-card .pic img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .tickets-card .content{
+        width: 100%;
+    }
+    .tickets-card .content .status{
+        padding: 0 22px;
+        min-width: 76px;
+        height: 30px;
+        line-height: 25px;
+        display: inline-block;
+        border-radius: 5px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .tickets-card .content .status.new{
+        background: rgba(62, 165, 66, 0.1);
+        border: 1px solid #3E9D42;
+        color: #3E9D42;
+    }
+    .tickets-card .content .status.overdue{
+        background: rgba(236, 83, 83, 0.1);
+        border: 1px solid #EC5353;
+        color: #EC5353;
+    }
+
+    .tickets-card .content .status.updated{
+        background: #4285F4;
+        border: 1px solid #4285F4;
+        color: #FFF;
+    }
+
+    .tickets-card .content .username{
+        font-weight: 700;
+        font-size: 16px;
+        color: #3D3D3D;
+        margin-bottom: 10px;
+    }
+    .tickets-card .content .company,
+    .tickets-card .content .info{
+        font-weight: 400;
+        font-size: 14px;
+        color: #707070;
+        margin-bottom: 10px;
+    }
+    .tickets-card .content .date{
+        font-weight: 400;
+        font-size: 14px; 
+        color: #3D3D3D;
+    }
+    .tickets-card .option .dropdown{
+        min-width: 120px;
+        padding: 5px 10px;
+    }
+    .tickets-card .option .dropdown-menu{
+        border: none;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    }
+    .tickets-card .option .dropdown-toggle{
+        text-transform: capitalize;
+        color: #3D3D3D;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .tickets-card .option .dropdown-toggle::after{
+        position: absolute;
+        right: 0;
+	top: 8px;
+        border: none;
+        content: "\f107";
+        font-size: 14px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 800;
+        margin-inline-start: 1rem;
+    }
+    [dir="rtl"] .tickets-card .option .dropdown-toggle::after{
+        right: auto;
+        left: 0;
+    }
+    .tickets-card .option .show .dropdown-toggle::after{
+        content: "\f106";
+    }
+    .tickets-card .option .dropdown-item{
+        position: relative;
+        cursor: pointer;
+        padding: 5px 15px;
+        border-radius: 4px;
+        word-break: break-word;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        padding-inline-end: 30px;
+        color: #3D3D3D !important;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        border-radius: 8px;
+    }
+    .tickets-card .option .dropdown-item.active{
+        color: #011627;
+        background: #EEEFF2;
+    }
+    .tickets-card .option .dropdown-item.active::after{
+        position: absolute;
+        content: "\f00c";
+        font-size: 16px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 800;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: #2390F5;
+    }
+    [dir="ltr"] .tickets-card .option .dropdown-item.active::after{
+        right: auto;
+        left: 10px;
+    }
+    .tickets-card .option .dropdown-item.active,
+    .tickets-card .option .dropdown-item:hover{
+        background: #F5F5F5;
+    }
+    .btn-priority-box,
+    .btn-priority{
+        display: flex;
+        align-items: center;
+    }
+    .btn-priority-box .dot,
+    .btn-priority .dot{
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        margin-inline-end: 10px;
+    }
+    .btn-priority-box .text,
+    .btn-priority .text{
+        color: #3D3D3D;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .freshdesk-fillter{
+        max-width: 320px;
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        border-radius: 8px;
+    }
+    .freshdesk-fillter .head{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .freshdesk-fillter .head .title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+        text-transform: capitalize;
+        color: #3D3D3D;
+    }
+    .freshdesk-fillter .head .btn-search{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: #F5F6FA;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .freshdesk-fillter .search-box{
+        position: relative;
+        max-width: calc(100% - 40px);
+        margin: auto;
+    }
+    .freshdesk-fillter .search-box .icon{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+        text-align: center;
+    }
+    [dir="rtl"] .freshdesk-fillter .search-box .icon{
+        left: auto;
+        right: 0;
+    }
+    .freshdesk-fillter .search-box .form-control{
+        border-color: transparent;
+        height: 40px;
+        background: #F5F6FA;
+        border-radius: 8px;
+        padding-inline-start: 40px;
+    }
+    .freshdesk-fillter .search-box .form-control::placeholder{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #707070;
+    }
+    .freshdesk-fillter .search-box .form-control:focus{
+        box-shadow: none;
+        background: #F5F5F5;
+        border-color:#D9DCE0;
+    }
+    .freshdesk-fillter .body{
+        position: relative;
+        padding: 20px;
+        height: calc(100% - (80px + 70px));
+    }
+    .freshdesk-fillter .body .form-label{
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .freshdesk-fillter .body .form-control{
+        border-color: transparent;
+        background-color: #FAFAFA;
+        font-size: 14px;
+        border-radius: 8px;
+        height: 40px;
+        color: #707070;
+    }
+    .freshdesk-fillter .body .form-control:focus{
+        background-color: #F5F5F5;
+        border-color:#D9DCE0;
+        box-shadow: none;
+    }
+    .freshdesk-fillter .footer{
+        padding: 20px 20px 10px;
+    }
+    .freshdesk-fillter .footer .btn{
+        height: 40px;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+    .freshdesk-fillter .footer .btn-theme{
+        color: #fff;
+        background: #43425D;
+        background-color: #43425D;
+    }
+    .dropdown-menu-user{
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .dropdown-menu-user .nav-tab-user{
+        padding-bottom: 0;
+        min-width: 320px;
+        display: flex;
+        background: #EEEFF2;
+    }
+    .nav-tab-user .nav-item{
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        width: 100%;
+        height: 100%;
+    }
+    .nav-tab-user .nav-item div{
+        padding: 1rem;
+        border-bottom: 2px solid transparent;
+    }
+    .nav-tab-user .nav-item div.active{
+        border-color: #2390F5;
+    }
+    .nav-tab-user .nav-item div.active .type{
+        color: #2390F5;
+    }
+    .dropdown-menu-user .nav-tab-user .nav-item .type{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #707070;
+        padding: 0;
+    }
+    .dropdown-menu-user .nav-tab-user .nav-item .title{
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 20px;
+        color: #3D3D3D;
+        padding: 0;
+    }
+
+    .dropdown-menu-user .tab-content{
+        padding: 0;
+    }
+    .dropdown-menu-user .tab-content .search-box{
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        border-bottom: 1px solid #EEEFF2;
+    }
+    .dropdown-menu-user .tab-content .search-box .icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+        text-align: center;
+    }
+    [dir="rtl"] .dropdown-menu-user .tab-content .search-box .icon{
+        right: auto;
+        left: 0;
+    }
+    .dropdown-menu-user .tab-content .search-box .form-control{
+        border-color: transparent;
+        height: 40px;
+        background: #fff;
+        border-radius: 0;
+        padding-inline-end: 40px;
+    }
+    .dropdown-menu-user .tab-content .search-box .form-control::placeholder{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #707070;
+    }
+    .dropdown-menu-user .tab-content .search-box .form-control:focus{
+        box-shadow: none;
+        background: #F5F5F5;
+        border-color:#D9DCE0;
+    }
+    .dropdown-menu-user .tab-content .list{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        padding: 1rem;
+    }
+
+    .list .list-item{
+        position: relative;
+        padding: 10px;
+        padding-inline-end: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: all .3s ease;
+    }
+    .list .list-item.active,
+    .list .list-item:hover{
+        color: rgb(35, 144, 245);
+        background-color: rgb(35, 144, 245, .1);
+    }
+    .list .list-item::after{
+        position: absolute;
+        right: 1rem;
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 800;
+    }
+    [dir="rtl"] .list .list-item::after{
+        right: auto;
+        left: 1rem;
+        transform: rotateY(-180deg);
+    }
+
+    .list .list-item.active::after,
+    .list .list-item:hover::after{
+        color: rgb(35, 144, 245);
+    }
+    .freshdesk-wrapper .freshdesk-contact,
+    .freshdesk-wrapper .freshdesk-fillter{
+        transition: all .3s ease;
+    }
+    .freshdesk-wrapper .freshdesk-contact.active{
+        max-width: 80px;
+        width: 80px;
+    }
+    .freshdesk-wrapper .freshdesk-fillter.active{
+        max-width: 0;
+        width: 0;
+    }
+
+    .freshdesk-tickets .body.no-ticket{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .no-ticket-card{
+        margin: auto;
+        max-width: 520px;
+        padding: 3rem;
+    }
+    .no-ticket-card .pic{
+        width: 254px;
+        margin: 1rem auto ;
+    }
+    .no-ticket-card .content{
+        text-align: center;
+    }
+    .no-ticket-card .content .title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 20px;
+        color: #011627;
+        margin-bottom: 30px;
+    }
+    .no-ticket-card .content .info{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #011627;
+        margin-bottom: 30px;
+    }
+    .no-ticket-card .content .btn{
+        min-width: 250px;
+        height: 42px;
+        line-height: 42px;
+        padding: 0;
+        border-color: #43425D;
+        background: #43425D;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .no-ticket-card .content .btn:focus,
+    .no-ticket-card .content .btn:hover{
+        color: #fff;
+        background: #011627;
+        border-color: #011627;
+    }
+
+
+    .freshdesk-view{
+        width: 100%;
+    }
+    .freshdesk-option{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        padding: 0 1rem;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 24px;
+    }
+    .freshdesk-option .nav{
+        gap: 1rem;
+    }
+    .freshdesk-option .nav .nav-item .nav-link{
+        padding: 0 1rem;
+        height: 40px;
+        line-height: 40px;
+        background: #F5F6FA;
+        border: 1px solid #EEEFF2;
+        border-radius: 8px;
+        color: #3D3D3D;
+        font-size: 14px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-transform: capitalize;
+        font-weight: 700;
+        transition: all .3s ease;
+    }
+    .freshdesk-option .nav .nav-item .nav-link:hover{
+        background-color: #3D3D3D;
+        color: #F5F6FA;
+    }
+    .freshdesk-option .nav .nav-item .nav-link svg path{
+        transition: all .3s ease;
+    }
+    .freshdesk-option .nav .nav-item .nav-link:hover svg path{
+        stroke: #F5F6FA;
+    }
+    .freshdesk-option .nav .nav-item .nav-link.danger{
+        background-color: rgb(236, 83, 83, .1);
+        color: #EC5353;
+    }
+    .freshdesk-option .nav .nav-item .nav-link.danger svg path{
+        stroke: #EC5353;
+    }
+    .freshdesk-option .nav .nav-item .nav-link.danger:hover{
+        background-color: rgb(236, 83, 83);
+        color: #fff;
+    }
+    .freshdesk-option .nav .nav-item .nav-link.danger:hover svg path{
+        stroke: #fff;
+    }
+
+    .freshdesk-option .nav .nav-item .nav-link.danger:hover svg path{
+        stroke: #fff;
+    }
+
+
+    .ticket-view{
+        position: relative;
+        padding: 8px;
+        background-color: #fff;
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+    .ticket-view .person-card{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 16px;
+    }
+    .ticket-view .person-card .pic{
+        min-width: 54px;
+        width: 54px;
+        height: 54px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .ticket-view .person-card .pic img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .ticket-view .person-card .content{
+        max-width: calc( 100% - (80px + 3rem));
+        width: 100%;
+    }
+    .ticket-view .person-card .content .title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+        color: #2390F5;
+        text-transform: capitalize;
+    }
+    .ticket-view .person-card .content .title span{
+        color: #3D3D3D;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .ticket-view .person-card .content .date{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #707070;
+        margin-bottom: 0;
+    }
+    .ticket-view .person-card .option{
+        display: flex;
+        gap: 1rem;
+    }
+    .ticket-view .person-card .option .btn{
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+        text-align: center;
+        background: #F5F6FA;
+        border: 1px solid #EEEFF2;
+        border-radius: 7px;
+        box-shadow: none !important;
+        padding:  0;
+    }
+    .person-msg{
+        display: flex;
+        gap: 1rem;
+    }
+    .person-msg .icon{
+        min-width: 30px;
+    }
+    .person-msg .info .to{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #3D3D3D;
+        margin-bottom: 1rem;
+    }
+    .person-msg .info .to strong{
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-inline-end: 10px;
+    }
+    .person-msg .info .text{
+        max-width: 767px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: #191919;
+    }
+    .freshdesk-reply-ticket .head{
+        background: #F1F2F5;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #E8E8E8;
+    }
+    .freshdesk-reply-ticket .head .pic{
+        min-width: 30px;
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .freshdesk-reply-ticket .head .pic img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .freshdesk-reply-ticket .head .content{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: capitalize;
+        color: #3D3D3D;
+    }
+    .freshdesk-reply-ticket .btn-theme{
+        height: 50px;
+        min-width: 160px;
+        border-radius: 10px;
+        color: #fff;
+        background: #43425D;
+        background-color: #43425D;
+        box-shadow: none;
+    }
+
+    .freshdesk-update{
+        position: relative;
+        min-width: 298px;
+        width: 298px;
+        height: 100%;
+        padding: 1rem;
+        background: #FFFFFF;
+        border-radius: 8px;
+    }
+    .freshdesk-update .wrapper .head{
+        border-bottom: 1px solid #F5F6FA;
+        margin-bottom: 24px;
+    }
+    .freshdesk-update .wrapper .head .status{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        color: #3D3D3D;
+        margin-bottom: 16px;
+    }
+    .freshdesk-update .wrapper .head .date{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: lowercase;
+        color: #707070;
+    }
+    .freshdesk-update .wrapper .form .form-title{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #3D3D3D;
+    }
+    .freshdesk-update .wrapper .form .form-group{
+        margin-bottom: 24px;
+    }
+    .freshdesk-update .wrapper .form .form-label{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: #3F3F3F;
+    }
+    .freshdesk-update .wrapper .form .form-control{
+        height: 50px;
+        border: 1px solid #BDBDBD;
+        border-radius: 8px;
+    }
+    .freshdesk-update .wrapper .form .btn{
+        height: 50px;
+        border-radius: 8px;
+    }
+    .freshdesk-view-tickets{
+        width: 100%;
+    }
+    .freshdesk-view-card{
+        display: flex;
+        gap: 20px;
+    }
+    .freshdesk-update .body{
+        position: relative;
+        height: calc(100vh - (59px + 24px + 1rem));
+    }
+    @media (max-width: 1024px) {
+        .freshdesk-tickets .head .option .btn-option{
+            display: flex;
+        }
+        .freshdesk-wrapper .freshdesk-fillter{
+            max-width: 0;
+            width: 0;
+        }
+        .freshdesk-wrapper .freshdesk-fillter.active{
+            max-width: 320px;
+            width: 100%;
+        }
+
+        .freshdesk-wrapper .freshdesk-contact{
+            max-width: 80px;
+            width: 80px;
+        }
+        .freshdesk-wrapper .freshdesk-contact.active{
+            max-width: 364px;
+            width: 364px;
+        }
+        .freshdesk-wrapper .freshdesk-contact.active,
+        .freshdesk-wrapper .freshdesk-fillter.active{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        }
+        .freshdesk-wrapper .freshdesk-fillter.active{
+            right: 0;
+            left: auto;
+        }
+        [dir="rtl"] .freshdesk-wrapper .freshdesk-contact.active{
+            right: 0;
+            left: auto;
+        }
+        [dir="rtl"] .freshdesk-wrapper .freshdesk-fillter.active{
+            left: 0;
+            right: auto;
+        }
+
+        .freshdesk-update{
+            position: fixed;
+            top: 0;
+            right: -400px;
+            transition: all .3s ease;
+        }
+        .freshdesk-update.active{
+            position: fixed;
+            top: 0;
+            right: 0;
+            transition: all .3s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        }
+
+        [dir="rtl"] .freshdesk-update{
+            right: auto;
+            left: -400px;
+        }
+        [dir="rtl"] .freshdesk-update.active{
+            right: auto;
+            left: 0;
+        }
+    }
+    @media (max-width: 540px) {
+        .freshdesk-wrapper .freshdesk-contact{
+            max-width: 0;
+            width: 0;
+            overflow: hidden;
+        }
+        .freshdesk-tickets .head{
+            flex-direction: column;
+        }
+        .freshdesk-tickets .head .title{
+            margin-bottom: 1rem;
+        }
+        .tickets-card {
+            flex-wrap: wrap;
+            padding: 1rem;
+        }
+        .tickets-card .content{
+            max-width: calc(100% - 100px);
+        }
+        .tickets-card .content .status {
+            padding: 0 16px;
+            min-width: 56px;
+            height: 24px;
+            line-height: 20px;
+            font-size: 14px;
+        }
+        .tickets-card .content .username{
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .tickets-card .content .company,
+        .tickets-card .content .info,
+        .tickets-card .content .date {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .freshdesk-tickets .head {
+            align-items: unset;
+        }
+        .tickets-card .option{
+            display: block;
+            width: 100%;
+        }
+        .tickets-card .option .dropdown{
+            padding: 0;
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid #EEEFF2;
+        }
+        .tickets-card .option .dropdown:last-child{
+            border-bottom: 1px solid transparent;
+        }
+        .tickets-card .option .dropdown .dropdown-toggle{
+            padding: 10px 0;
+            width: 100%;
+            display: flex;
+        }
+        .freshdesk-option .nav {
+            gap: .5rem;
+        }
+        .freshdesk-option .nav .nav-item .nav-link span{
+            display: none;
+        }
+    }
+

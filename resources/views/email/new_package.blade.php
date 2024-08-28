@@ -1,0 +1,37 @@
+@extends('email.layouts.master')
+
+@section('subject', __('mail.welcome_to_cyberx'))
+
+@section('content')
+    <!-- todo title -->
+    <tr>
+        <td style=" padding-bottom: 10px; text-align: center;">
+            <p style="color:#595874; font-size: 16px; margin: 0; font-weight: bold; font-family:Almarai;">
+                {{ __('mail.new_package_added') }}
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td style=" padding-bottom: 20px; padding-top: 15px; text-align: center;">
+            <img src="{{ asset('email_assets/assets/img/email_success.png') }}" width="150" alt="">
+        </td>
+    </tr>
+    <!-- info -->
+    <tr>
+        <td style="border-radius: 5px; background-color: #F5F6FA; padding: 30px; ">
+            <p style="color:#383B37; font-size: 16px; font-weight: bold; font-family:Almarai;">
+                {{ __('lang.hello_user', ['user' => object_get($user, 'name')]) }},
+            </p>
+            <p style="color:#595874; font-size: 16px; font-family:Almarai; font-weight: bold; ">
+                {{ 'Product Name ' . object_get($product, 'name') }}
+                <br>
+                {{ 'Package Name ' . object_get($package, 'name') }}
+            </p>
+            <p style="color:#383B37; font-size: 14px; line-height: 28px; margin: 0; font-family:Almarai;">
+                {{ __('mail.do_not_share_information') }}
+            </p>
+        </td>
+    </tr>
+
+
+@endsection
